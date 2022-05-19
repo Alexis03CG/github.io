@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrar</title>
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <script src="borrarPF.js"></script>
+    <link rel="stylesheet" href="operaciones.css">
+
+</head>
+<body>
+    <h1>Eliminar una noticia</h1>
+
+    <table>
+        <tr>
+            <td><label for="key">ID de la noticia:</label></td>
+            <td><input type="text" id="Titulo"></td>
+        </tr>
+    </table>
+
+    <button onclick="borrar()">Borrar noticia</button>
+
+    <div hidden>
+        <h1>Información del resultado</h1>
+    <p>¿Hay error?: <span id="error"></span></p>
+    <p>Mensaje: <span id="message"></span></p>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <title>Nueva cuenta</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="cuentas.css">
+</head>
+
+<body>
+    <h1>Crear nueva cuenta:</h1>
+    <table>
+        <tr hidden>
+            <td>ID</td>
+            <td><input type="text" id="ID"></td>
+        </tr>
+        <tr>
+            <td>Nombre:</td>
+            <td><input type="text" id="Nombre"></td>
+        </tr>
+        <tr>
+            <td>Contraseña:</td>
+            <td><input type="text" id="Contraseña"></td>
+        </tr>
+        <tr hidden>
+            <td>Redactor:</td>
+            <td><input type="text" id="Redactor"></td>
+        </tr>
+    </table>
+
+    <p>
+        <button onclick="crearcuenta(); cuentacreada()" >Crear cuenta</button>
+    </p>
+    <p><b>¿Tienes una cuenta?</b></p>
+        <p><a href="login.html">Iniciar sesión</a></p>
+
+    <script src="crearcuenta.js"></script>
+</body>
+
+</html>

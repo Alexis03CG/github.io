@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <script src="modifPF.js"></script>
+    <link rel="stylesheet" href="operaciones.css">
+</head>
+<body>
+    <h1>Modificar una noticia</h1>
+
+    <table>
+        <tr hidden>
+            <td><label for="idGoogleSheet">Id del documento de Google</label></td>
+            <td><input type="text" id="idGoogleSheet" value="AKfycbzzgo4O32CMRnnYKbOFuKD-KqAvB7-EinmzhY_-IodMEu5Db-4EjPZjbustUaXGcVDgQQ"></td>
+        </tr>
+        <tr hidden>
+            <td><label for="tableName">Tabla de la base de datos</label></td>
+            <td><input type="text" id="tableName" value="Noticias"></td>
+        </tr>
+        <tr>
+            <td><label for="key">ID de la noticia</label></td>
+            <td><input type="text" id="key" value=""></td>
+        </tr>
+        <tr>
+            <label hidden for="columnName1">Columna 1</label>
+            <input hidden type="text" id="columnName1" value="Titulo">
+            <td><label for="columnValue1">Titulo</label></td>
+            <td><input type="text" id="columnValue1" value="Titulo"></td>
+        </tr>
+        <tr>
+            <label hidden for="columnName2">Columna 2</label>
+            <input hidden type="text" id="columnName2" value="Subtitulo">
+            <td><label for="columnValue2">Subtitulo</label></td>
+            <td><input type="text" id="columnValue2" value="Subtitulo"></td>
+        </tr>
+        <tr>
+            <label hidden for="columnName3">Columna 3</label>
+            <input hidden type="text" id="columnName3" value="Cuerpo">
+            <td><label for="columnValue3">Cuerpo</label></td>
+            <td><input type="text" id="columnValue3" value="Cuerpo"></td>
+        </tr>
+        <tr>
+            <label hidden for="columnName4">Columna 4</label>
+            <input hidden type="text" id="columnName4" value="Imagen">
+            <td><label for="columnValue4">Imagen</label></td>
+            <td><input type="text" id="columnValue4" value="Imagen"></td>
+        </tr>
+        <tr>
+            <label hidden for="columnName5">Columna 5</label>
+            <input hidden type="text" id="columnName5" value="Fecha">
+            <td><label for="columnValue5">Fecha</label></td>
+            <td><input type="text" id="columnValue5" value="Fecha"></td>
+        </tr>
+        <tr>
+            <label hidden for="columnName6">Columna 6</label>
+            <input hidden type="text" id="columnName6" value="IDCategoria">
+            <td><label for="columnValue6">Categoria (ID)</label></td>
+            <td><input type="text" id="columnValue6" value="Categoria"></td>
+        </tr>
+        <tr>
+            <label hidden for="columnName7">Columna 7</label>
+            <input hidden type="text" id="columnName7" value="IDRedactor">
+            <td><label for="columnValue7">Redactor (ID)</label></td>
+            <td><input type="text" id="columnValue7" value="Redactor"></td>
+        </tr>
+
+
+    </table>
+    
+
+
+    <button onclick="update()">Modificar noticia</button>
+
+
+    <div hidden id="er">
+        <h3>Información del resultado</h3>
+        <p>¿Hay error?: <span id="error"></span></p>
+        <p>Mensaje: <span id="message"></span></p>
+    </div>
+    
+</body>
+</html>

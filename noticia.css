@@ -1,0 +1,51 @@
+body {
+    background-color:rgb(176, 176, 176);
+}
+
+div{
+    padding: 5px;
+    border: 5px;
+    border-style: outset;
+}
+
+h1{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    padding-left: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+
+#imagen{
+    width: 400px;
+    height: 250px;
+    border: 2px;
+    border-style:solid;
+}
+
+#cuerpo {
+    font-style:normal;
+}
+
+#Redactor {
+    font-weight: bold;
+}
+
+#Categoria {
+    font-weight: bold;
+}
+
+#Fecha {
+    font-weight: bold;
+}
+
+#Subtitulo {
+    font-style: italic;
+}

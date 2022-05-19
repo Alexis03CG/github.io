@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://agomcue486.github.io/lenguajes-de-marcas/GoogleSheetDataBase.js"></script>
+    <title>Redacte una nueva noticia:</title>
+    <link rel="stylesheet" href="operaciones.css">
+</head>
+
+<body>
+    <h1>Nueva noticia:</h1>
+    <table>
+        <tr hidden>
+            <td>ID</td>
+            <td><input type="text" id="ID"></td>
+        </tr>
+        <tr>
+            <td>Titulo:</td>
+            <td><input type="text" id="Titulo"></td>
+        </tr>
+        <tr>
+            <td>Subtitulo:</td>
+            <td><input type="text" id="Subtitulo"></td>
+        </tr>
+        <tr>
+            <td>Cuerpo:</td>
+            <td><input type="text" id="Cuerpo"> </td>
+        </tr>
+        <tr>
+            <td>Fecha (/):</td>
+            <td><input type="text" id="Fecha"></td>
+        </tr>
+        <tr>
+            <td>Categoria:</td>
+            <td><input type="text" id="Categoria"></td>
+        </tr>
+        <tr>
+            <td>Imagen (Extensión)</td>
+            <td><input type="text" id="imagen"></td>
+        </tr>
+        <tr>
+            <td>Redactado por:</td>
+            <td><input type="text" id="Redactor"></td>
+        </tr>
+    </table>
+
+    <p>
+        <button onclick="insertarPF()" id="btnInsertar">Publicar noticia</button>
+    </p>
+
+    <script src="insertarPF.js"></script>
+</body>
+
+</html>
